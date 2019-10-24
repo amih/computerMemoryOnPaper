@@ -67,7 +67,7 @@ function Ascii() {
       <div className="charContainer" style={charcontainerStyle}>
         {items}
         <br />
-        In memory there is an array of 11 names, each name can be up to 25 characters.<br />
+        In memory there is an array of 11 names starting at address 300, each name can be up to 25 characters.<br />
         Each name is NULL terminated, so no need to look after the NULL.<br />
         What is the longest name?<br />
         What is the 10th name?
