@@ -12,6 +12,9 @@ Ami Heines, simple project to explain and teach by showing how memory works on a
 1. what else?...
 ===================================================================================
 
+[The final PDF for this project](https://github.com/amih/computerMemoryOnPaper/raw/master/pdf/ComputerMemoryOnPaper.pdf)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ### `npm start`
