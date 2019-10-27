@@ -37,7 +37,7 @@ const zfill = (num, len) => {
   return (Array(len).join("0") + num).slice(-len); 
 }
 function Ascii() {
-  let chars = 'Gil Heines! This is your mission, should you choose to accept it...\u0000Gibberish, blah, blah... nothing to see here, keep moving!\nPi ~= 3.14159265\u0000'.split('');
+  let chars = 'This is your mission, should you choose to accept it...\u0000Gibberish, blah, blah... nothing to see here, keep moving!\nPi ~= 3.14159265\u0000'.split('');
   const items = chars.map((ch, i) => (
     <div className="charBox" key={i}  style={charboxStyle}>
       <div className="charcode" style={charcodeStyle}>{ zfill(300+i, 3) }</div>

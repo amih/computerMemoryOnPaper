@@ -54,6 +54,7 @@ function Ascii() {
   let names = ['Gil', 'Ohad', 'Wilhelmina', 'Annamaria', 'Shaked', 'Batshi', 'Amnon', 'Constantinopolechick', 'Ami', 'Anat', 'Jerry'];
   names = names.map(nm => zfillright(nm + '\u0000', 25, ' '));
   let chars = names.join('').split('');
+  chars = chars.concat(' Answers: the longest name is "Constantinopolechick", The 10th name is "Anat"'.split(''));
   console.log(chars);
   const items = chars.map((ch, i) => (
     <div className="charBox" key={i}  style={charboxStyle}>
@@ -70,7 +71,9 @@ function Ascii() {
         In memory there is an array of 11 names starting at address 300, each name can be up to 25 characters.<br />
         Each name is NULL terminated, so no need to look after the NULL.<br />
         What is the longest name?<br />
-        What is the 10th name?
+        What is the 10th name?<br />
+        Are you sure you got the correct address for the 10th name?<br />
+        You can check the answers at address 576.
       </div>
     </div>
   );
